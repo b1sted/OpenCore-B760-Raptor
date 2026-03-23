@@ -1,0 +1,15 @@
+# macOS metadata
+.DS_Store
+.Spotlight-V100
+.Trashes
+.fseventsd
+._*
+.contentFlavour
+.contentVisibility
+
+# OpenCore debug logs (never commit these)
+EFI/OC/opencore-XXXX-XX-XX.txt
+EFI/OC/SysReport/
+
+# Old configs
+**/oldConfig.plist
