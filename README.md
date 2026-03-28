@@ -273,10 +273,13 @@ Tested on Gigabyte B760 Gaming X DDR4 GEN5 (BIOS Version: F4).
 |-------------|:---------:|
 | Initial Display Output | PCIe 1 Slot |
 | Above 4G Decoding | **Enabled** |
-| Above 4GB MMIO BIOS assignment | **Enabled** *(required together with Re-Size BAR)* |
-| Re-Size BAR Support | **Enabled** |
+| Above 4GB MMIO BIOS assignment | **Disabled** |
+| Re-Size BAR Support | **Disabled** |
 | VT-d | **Enabled** *(DisableIoMapper = false in config)* |
 | VMD Controller | **Disabled** |
+
+> [!NOTE]
+> Above 4GB MMIO BIOS assignment and Re-Size BAR are disabled — enabling either breaks sleep/wake on both macOS and Linux on this board. Above 4G Decoding must remain **Enabled** regardless.
 
 ### Settings → USB Configuration
 
